@@ -5,12 +5,12 @@ import { AuthModule } from './auth/auth.module';
 import { MongooseModule } from '@nestjs/mongoose';
 import { HelloController } from './hello/hello.controller';
 import { BookingController } from './booking/booking.controller';
-import { MovieModule } from './movie/movie.module';
+import { CourseModule } from './course/course.module';
 @Module({
   imports: [
     MongooseModule.forRoot('mongodb://localhost/movie'),
     AuthModule,
-    MovieModule,
+    CourseModule,
     
   ],
   controllers: [AppController, HelloController, BookingController],

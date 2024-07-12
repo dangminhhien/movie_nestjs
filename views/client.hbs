@@ -80,7 +80,7 @@
           </div>
           <div class="order-1 sm:order-2 sm:col-start-2">
             <div class="overflow-hidden rounded-md">
-              <a target="" class="relative block aspect-[75/42] w-full overflow-hidden" href="/cinema#cumrap">
+                {{!-- <a target="" class="relative block aspect-[75/42] w-full overflow-hidden" href="/hello/{{this.slug}}"> --}}
                 <span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0">
                 </span>
               </a>
@@ -102,12 +102,15 @@
 
                 {{#each courses}}
                     <div class="col-sm-10 col-lg-4">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
+                        <div class="card-img-top">
+                          <a href="/booking/{{this.slug}}">
+                            <img src="{{this.image}}" class="card-img-top" alt="Card image cap">
+                          </a>
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="/booking/{{this.slug}}">
+                                <h5 class="card-title">{{this.name}}</h5>
+                                </a>
+                                <p class="card-text">{{this.category}}</p>
                             </div>
                         </div>
                     </div>
