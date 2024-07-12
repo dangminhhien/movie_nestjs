@@ -101,13 +101,13 @@
             <div class="row">
 
                 {{#each courses}}
-                    <div class="col-sm-10 col-lg-4">
+                    <div class="col-sm-6 col-lg-4">
                         <div class="card-img-top">
-                          <a href="/booking/{{this.slug}}">
+                          <a href="/movie/{{this._id}}">
                             <img src="{{this.image}}" class="card-img-top" alt="Card image cap">
                           </a>
                             <div class="card-body">
-                                <a href="/booking/{{this.slug}}">
+                                <a href="/movie/{{this._id}}">
                                 <h5 class="card-title">{{this.name}}</h5>
                                 </a>
                                 <p class="card-text">{{this.category}}</p>
@@ -115,6 +115,7 @@
                         </div>
                     </div>
                 {{/each}}
+
             </div>
         </div>
     </section>
