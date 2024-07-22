@@ -250,3 +250,47 @@ main {
 .btn-primary:hover {
   background-color: #8d0045;
 }
+.contai {
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+  gap: 20px; /* Khoảng cách giữa các phần tử */
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.lichchieuphim {
+  text-align: center;
+}
+
+h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+h1 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+select:focus {
+  border-color: #007bff;
+}
+
+
