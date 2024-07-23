@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chon rap chieu phim</title>
+  <link rel="stylesheet" href="css/client.css">
 </head>
 <body>
-    <div class="card" style="width: 18rem;">
-        <img src="{{local.image}}" class="card-img-top" alt="{{local.name}}">
-        <div class="card-body">
-            <h5 class="card-title">{{local.name}}</h5>
-            <p class="card-text">{{local.local}}</p>
-            <a href="#" class="btn btn-primary">Chon</a>
+<div class="mt-4">
+  <div class="row">
+    {{#each local}}
+      <div class="col-sm-6 col-lg-4">
+        <div class="card-img-top">
+          <a href="{{this.map}}">
+            <img src="{{this.image}}" class="card-img-top" alt="Card image cap">
+          </a>
+          <div class="card-body">
+            <a href="{{this.map}}">
+              <h5 class="card-title">{{this.name}}</h5>
+            </a>
+            <p class="card-text">{{this.local}}</p>
+          </div>
+            <div class="card-body">
+                <button type="submit" class="card-link">Chon</button>
+            </div>
+          </div>
         </div>
+    {{/each}}
     </div>
+  </div>
 </body>
 </html>

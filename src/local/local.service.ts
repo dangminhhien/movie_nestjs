@@ -7,7 +7,7 @@ import { Local, LocalDocument } from './local.schema';
 export class LocalService {
   constructor(@InjectModel(Local.name) private localModel: Model<LocalDocument>) {}
 
-  async findOneByMovieId(movieId: string): Promise<Local> {
-    return this.localModel.findOne({ movieId }).exec();
+  async findAll(): Promise<Local[]> {
+    return this.localModel.find().exec();
   }
 }

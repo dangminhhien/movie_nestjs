@@ -9,14 +9,8 @@
     <img src="{{movie.image}}" alt="{{movie.name}}">
     <h1>{{movie.name}}</h1>
     <p>Noi dung: {{movie.content}}</p>
-    <a href="https://www.youtube.com/watch?v=GTupBD8M3yw&t=5s">Xem trailer</a>
-    <button type="button" id="datVeButton">dat ve</button>
+    <a href="{{movie.trailer}}">Xem trailer</a>
+    <a href="/local">Dat ve</a>
   </div>
-
-  <script>
-    document.getElementById('datVeButton').addEventListener('click', function() {
-      window.location.href = '/movie/{{movie.id}}/local';
-    });
-  </script>
 </body>
 </html>

@@ -16,4 +16,7 @@ export class MovieService {
         }
         return movie;
     }
+    async findAll(): Promise<Movie[]> {
+        return this.movieModel.find().exec();
+      }
 }

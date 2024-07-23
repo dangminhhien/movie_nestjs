@@ -15,9 +15,14 @@ export class MovieController {
             throw new NotFoundException(error.message);
         }
     }
-    @Get(':id/local')
+    @Get()
     @Render('local')
-    getLocalPage(){
-        return{};
-    }
+        async getLocalMovies() {
+            try {
+                const movies = await this.movieService.findAll();
+                return {  movies };
+            } catch (error) {
+                throw new NotFoundException(error.message);
+                }
+        }
 }

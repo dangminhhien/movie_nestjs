@@ -5,13 +5,10 @@ import { LocalService } from './local.service';
 export class LocalController {
   constructor(private readonly localService: LocalService) {}
 
-  @Get(':movieId')
+  @Get()
   @Render('local')
-  async getLocalPage(@Param('movieId') movieId: string) {
-    const local = await this.localService.findOneByMovieId(movieId);
-    if (!local) {
-      throw new NotFoundException(`Local data for movie with id ${movieId} not found`);
-    }
-    return { local };
+  async showLocalForm(){
+    const local = await this.localService.findAll();
+    return {local};
   }
 }

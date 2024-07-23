@@ -7,194 +7,67 @@
   <link rel="stylesheet" href="css/client.css">
 </head>
 <body>
-  <header>
-    <a href="/hello" class="logo flex items-center">
-      <img src="https://homepage.momocdn.net/fileuploads/svg/momo-file-221117104714.svg" alt="Momo Logo" class="logo-img h-10">
-      <div class="logo-text ml-2">
-        <span>Đặt vé <br>xem phim</span>
-      </div>
-    </a>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="/cinema/lich-chieu?fromType=nav_menu">Lịch chiếu</a></li>
-        <li><a href="/cinema/rap?fromType=nav_menu">Rạp chiếu</a></li>
-        <li><a href="/cinema/phim-chieu?fromType=nav_menu">Phim chiếu</a></li>
-        <li><a href="/cinema/review?fromType=nav_menu">Review phim</a></li>
-        <li><a href="/cinema/top-phim?fromType=nav_menu">Top phim</a></li>
-        <li><a href="/cinema/blog?fromType=nav_menu">Blog phim</a></li>
-        <li><a href="/search"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="search-icon"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></a></li>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
       </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="block-241" data-index="0" data-type="3" class="py-8 md:py-10 lg:py-14 landing:bg-transparent bg-pink-50" style="--grad-rgb-color:253 242 248">
-      <div class="mx-auto w-full max-w-6xl px-5 md:px-8 lg:px-8">
-        <div data-root-margin="10" class="landing-fadeUp-child grid grid-cols-1 items-center gap-6 sm:grid-cols-2">
-          <div class="order-2 sm:order-1 sm:col-start-1">
-            <div class="text-left">
-              <h1 class="service-page-title mb-2 text-2xl font-bold text-pink-600 landing:text-lpTitle md:mb-6 md:text-3xl lg:text-4xl">Đặt mua vé xem phim MoMo</h1>
-              <div class="service-page-description">
-                <div class="mt-4 grid grid-cols-1 gap-y-3">
-                  <div class="flex-container">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="block shrink-0">
-                      <circle opacity="0.1" cx="12" cy="12" r="12" fill="#A50064" class="fill-cus"></circle>
-                      <path d="M17.3332 8L9.99984 15.3333L6.6665 12" stroke="#A50064" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                    <div class="note pl-2 text-md text-gray-600 landing:text-lpText">
-                      Mua vé Online, <strong>trải nghiệm phim hay</strong>
-                    </div>
-                  </div>
-                  <div class="flex-container">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="block shrink-0">
-                      <circle opacity="0.1" cx="12" cy="12" r="12" fill="#A50064" class="fill-cus"></circle>
-                      <path d="M17.3332 8L9.99984 15.3333L6.6665 12" stroke="#A50064" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                    <div class="note pl-2 text-md text-gray-600 landing:text-lpText">
-                      <strong>Đặt vé an toàn</strong> trên 
-                    </div>
-                  </div>
-                  <div class="flex-container">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="block shrink-0">
-                      <circle opacity="0.1" cx="12" cy="12" r="12" fill="#A50064" class="fill-cus"></circle>
-                      <path d="M17.3332 8L9.99984 15.3333L6.6665 12" stroke="#A50064" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                    <div class="note pl-2 text-md text-gray-600 landing:text-lpText">
-                      Tha hồ <strong>chọn chỗ ngồi, mua bắp nước</strong> tiện lợi
-                    </div>
-                  </div>
-                  <div class="flex-container">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="block shrink-0">
-                      <circle opacity="0.1" cx="12" cy="12" r="12" fill="#A50064" class="fill-cus"></circle>
-                      <path d="M17.3332 8L9.99984 15.3333L6.6665 12" stroke="#A50064" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                    <div class="note pl-2 text-md text-gray-600 landing:text-lpText">
-                      <strong>Lịch sử đặt vé</strong> được lưu lại ngay
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="mt-7">
-              <div class="flex space-x-3 md:space-x-4 md:inline-block"></div>
-            </div>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="mt-4">
+  <div class="row">
+    {{#each courses}}
+      <div class="col-sm-6 col-lg-4">
+        <div class="card-img-top">
+          <a href="/movie/{{this._id}}">
+            <img src="{{this.image}}" class="card-img-top" alt="Card image cap">
+          </a>
+          <div class="card-body">
+            <a href="/movie/{{this._id}}">
+              <h5 class="card-title">{{this.name}}</h5>
+            </a>
+            <p class="card-text">{{this.category}}</p>
           </div>
-          <div class="order-1 sm:order-2 sm:col-start-2">
-            <div class="overflow-hidden rounded-md">
-                {{!-- <a target="" class="relative block aspect-[75/42] w-full overflow-hidden" href="/hello/{{this.slug}}"> --}}
-                <span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0">
-                </span>
-              </a>
+            <div class="card-body">
+              <a href="/movie/{{this._id}}" class="card-link">Chi tiet</a>
+              <a href="/local" class="card-link">Dat ve</a>
+              {{!-- <button type="submit" class="card-link">Dat ve</button> --}}
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="scroll-margin-top bg-black bg-contain bg-bottom bg-no-repeat py-8 md:py-10 lg:py-14 " style="background-image:url(https://homepage.momocdn.net/img/momo-upload-api-210701105436-637607336767432408.jpg)" id="phimdangchieu">
-        <div class="mb-5 text-center md:mb-8">
-            <div class="inline-block relative">
-                <strong class="relative z-2 font-bold">
-                    <h2 class="text-2xl font-bold landing:text-lpTitle lg:text-3xl text-white">Phim đang chiếu</h2>
-                </strong>
-            </div>
-        </div>
-        <div class="mt-4">
-            <div class="row">
-
-                {{#each courses}}
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="card-img-top">
-                          <a href="/movie/{{this._id}}">
-                            <img src="{{this.image}}" class="card-img-top" alt="Card image cap">
-                          </a>
-                            <div class="card-body">
-                                <a href="/movie/{{this._id}}">
-                                <h5 class="card-title">{{this.name}}</h5>
-                                </a>
-                                <p class="card-text">{{this.category}}</p>
-                            </div>
-                        </div>
-                    </div>
-                {{/each}}
-
-            </div>
-        </div>
-    </section>
-
-  </main>
-    <section class="sec2">
-      <div class="contai">
-        <div class="lichchieuphim">
-          <h2>Lịch chiếu phim</h2>
-          <h1>Vị trí</h1>
-        <select name="" id="">
-          <option value="An Giang">An Giang
-          <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu
-          <option value="Bắc Giang">Bắc Giang
-          <option value="Bắc Kạn">Bắc Kạn
-          <option value="Bạc Liêu">Bạc Liêu
-          <option value="Bắc Ninh">Bắc Ninh
-          <option value="Bến Tre">Bến Tre
-          <option value="Bình Định">Bình Định
-          <option value="Bình Dương">Bình Dương
-          <option value="Bình Phước">Bình Phước
-          <option value="Bình Thuận">Bình Thuận
-          <option value="Bình Thuận">Bình Thuận
-          <option value="Cà Mau">Cà Mau
-          <option value="Cao Bằng">Cao Bằng
-          <option value="Đắk Lắk">Đắk Lắk
-          <option value="Đắk Nông">Đắk Nông
-          <option value="Điện Biên">Điện Biên
-          <option value="Đồng Nai">Đồng Nai
-          <option value="Đồng Tháp">Đồng Tháp
-          <option value="Đồng Tháp">Đồng Tháp
-          <option value="Gia Lai">Gia Lai
-          <option value="Hà Giang">Hà Giang
-          <option value="Hà Nam">Hà Nam
-          <option value="Hà Tĩnh">Hà Tĩnh
-          <option value="Hải Dương">Hải Dương
-          <option value="Hậu Giang">Hậu Giang
-          <option value="Hòa Bình">Hòa Bình
-          <option value="Hưng Yên">Hưng Yên
-          <option value="Khánh Hòa">Khánh Hòa
-          <option value="Kiên Giang">Kiên Giang
-          <option value="Kon Tum">Kon Tum
-          <option value="Lai Châu">Lai Châu
-          <option value="Lâm Đồng">Lâm Đồng
-          <option value="Lạng Sơn">Lạng Sơn
-          <option value="Lào Cai">Lào Cai
-          <option value="Long An">Long An
-          <option value="Nam Định">Nam Định
-          <option value="Nghệ An">Nghệ An
-          <option value="Ninh Bình">Ninh Bình
-          <option value="Ninh Thuận">Ninh Thuận
-          <option value="Phú Thọ">Phú Thọ
-          <option value="Quảng Bình">Quảng Bình
-          <option value="Quảng Bình">Quảng Bình
-          <option value="Quảng Ngãi">Quảng Ngãi
-          <option value="Quảng Ninh">Quảng Ninh
-          <option value="Quảng Trị">Quảng Trị
-          <option value="Sóc Trăng">Sóc Trăng
-          <option value="Sơn La">Sơn La
-          <option value="Tây Ninh">Tây Ninh
-          <option value="Thái Bình">Thái Bình
-          <option value="Thái Nguyên">Thái Nguyên
-          <option value="Thanh Hóa">Thanh Hóa
-          <option value="Thừa Thiên Huế">Thừa Thiên Huế
-          <option value="Tiền Giang">Tiền Giang
-          <option value="Trà Vinh">Trà Vinh
-          <option value="Tuyên Quang">Tuyên Quang
-          <option value="Vĩnh Long">Vĩnh Long
-          <option value="Vĩnh Phúc">Vĩnh Phúc
-          <option value="Yên Bái">Yên Bái
-          <option value="Phú Yên">Phú Yên
-          <option value="Tp.Cần Thơ">Tp.Cần Thơ
-          <option value="Tp.Đà Nẵng">Tp.Đà Nẵng
-          <option value="Tp.Hải Phòng">Tp.Hải Phòng
-          <option value="Tp.Hà Nội">Tp.Hà Nội
-          <option value="TP  HCM">TP HCM
-        </select>
-        </div>
-      </div>
-    </section>
+    {{/each}}
+    </div>
+  </div>
 </body>
-</html> 
+</html>
