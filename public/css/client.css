@@ -96,3 +96,21 @@ body {
     max-width: 50%;
   }
 }
+.navbar {
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dee2e6;
+}
+.navbar a {
+  color: #007bff;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 16px;
+}
+.navbar a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
