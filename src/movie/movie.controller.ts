@@ -15,4 +15,9 @@ export class MovieController {
             throw new NotFoundException(error.message);
         }
     }
+    @Get(':id/local')
+    @Render('local')
+    getLocalPage(){
+        return{};
+    }
 }
