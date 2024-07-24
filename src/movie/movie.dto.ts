@@ -11,3 +11,11 @@ export class MovieDto {
     this.trailer = movie.trailer;
   }
 }
+
+export class UserDto {
+  readonly username: string;
+
+  constructor(user: any) {
+    this.username = user.username;
+  }
+}
